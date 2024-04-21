@@ -14,9 +14,11 @@
 // TODO: the whole "indicator LED" thing needs to be refactored into
 //       "aux LED(s)" and "button LED(s)" since they work a bit differently
 // enabling this option breaks the button LED on D4v2.5
-#ifdef USE_INDICATOR_LED_WHILE_RAMPING
-#undef USE_INDICATOR_LED_WHILE_RAMPING
-#endif
+//#ifdef USE_INDICATOR_LED_WHILE_RAMPING
+//#undef USE_INDICATOR_LED_WHILE_RAMPING
+//#endif
+#define USE_AUX_RGB_LEDS_WHILE_ON 40
+#define USE_INDICATOR_LED_WHILE_RAMPING
 
 // channel modes...
 // CM_CH1, CM_CH2, CM_BOTH, CM_BLEND, CM_AUTO
